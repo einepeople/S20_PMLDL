@@ -8,6 +8,11 @@ D.romanov, BS4-DS1
 Requirements: `pandas`,`sklearn`, `torch`
 Put it into your local Jupyter environment or Google Colab and push "Run all" button.
 
+# Brief task description
+
+Create a neural network optimizer based on Simpulated Annealing algorithm.
+Use it to optimize NN weights for an Iris classification task.
+
 # Implementation
 
 Simulated Annealing optimizer was implemented using corresponding PyTorch API -`Optimizer` base class was used for inheritance. 
