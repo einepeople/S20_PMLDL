@@ -7,6 +7,10 @@ D.Romanov, BS4-DS1
 
 Requirements: `pandas`, `numpy`, `matplotlib`, `geopy`, `shapely`, `celluloid`
 Put it into Google Colab and push "Run all" button.
+Warning! Due to uncontrollable performance problems it may take awhile to render an animation.
+If you do not have 20 minutes of spare time, use the one I left in `.ipynb` file to check that animation exists
+or comment out `draw_outline`, `draw_cities`, `draw_path` and `camera.snap()` calls.
+Sorry for the inconvenience.
 
 # Convergence
 
@@ -29,6 +33,9 @@ On the other hand, drastic change in the number of iterations between 0.99/0.995
 # Discussion
 
 From one point of view, correctly implemented and working algorithm may produce a solution to such discrete and "non-differentiatable" problem with arbitrary precision due to relatively big amount of hyperparameters.
+
 From the other point of view, it may be more practical to use minimum spanning tree algorithms for that - they provide The Optimal Solution with O(E\*logE) time complexity (Kruskal's algorithm). For sure, they will struggle on bigger graphs, but Simulated Annealing will struggle as well.
+
 On the other hand, the algorithm showed very nice results given how little prior information it "knew" about the problem. 
+
 As a future work, I would probably research other ways of expressing energy levels and more "sentient" ways to pick vertices for swapping.
