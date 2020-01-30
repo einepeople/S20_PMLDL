@@ -2,6 +2,7 @@
 
 PML&DL course
 D.Romanov, BS4-DS1
+repo: https://github.com/einepeople/S20_PMLDL
 
 # How to run?
 
